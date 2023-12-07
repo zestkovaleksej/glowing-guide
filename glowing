@@ -1,0 +1,14 @@
+                            in state: MaskSettings?) -> MaskSettings? {
+        
+        guard let mask else { return nil }
+        
+        guard var state else {
+            return .init(mask: mask)
+        }
+        
+        state.mask = mask
+        return state
+    }
+    
+}
+
